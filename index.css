@@ -1,0 +1,99 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Fira Code', monospace;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header {
+    padding: 4rem 0;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.terminal {
+    display: inline-block;
+}
+
+.prompt {
+    color: #00ff00;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+nav {
+    margin-top: 2rem;
+}
+nav a {
+    color: #00ff00;
+    text-decoration: none;
+    margin-right: 2rem;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.hero {
+    padding: 6rem 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; margin: 4rem 0;
+}
+.card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: #00ff00;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,255,0,0.1);
+}
+.code-block {
+    background: #0a0a0a;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    border-left: 3px solid #00ff00;
+}
+.code-block code {
+    color: #00ff00;
+    font-size: 0.9rem;
+}
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    color: #555;
+    border-top: 1px solid #1a1a1a;
+    margin-top: 4rem;
+}
