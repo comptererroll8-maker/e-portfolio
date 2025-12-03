@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Dark - Portfolio Développeur</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="terminal"><span class="prompt">$ </span><span id="typed"></span><span class="cursor">_</span></div>
+            <nav>
+                <a href="#projets">projets</a>
+                <a href="#skills">compétences</a>
+                <a href="#certification">certification</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </header>
+        <section class="hero">
+            <h3>Je suis un etudiant en informatique en specialite sisr</h3>
+            <p></p>
+        </section>
+        <section class="section" id="projets">
+            <div class="card">
+                <h4>Creation jeu video</h4>
+                <p></p>
+                <div class="code-block"><code>langage C#</code></div>
+            </div>
+            <div class="card">
+                <h3>Installation code blocs</h3>
+                <p>via ubuntu</p>
+                <div class="code-block"><code>linux</code></div>
+            </div>
+            <div class="card">
+                <h3></h3>
+                <p></p>
+                <div class="code-block"><code></code></div>
+            </div>
+        </section>
+        <br>
+        <section class="section" id="skills">
+            <div class="card">
+                <h4>HTML</h4>
+                <p>3 mois d'apprentissage</p>
+                <div class="code-block"><code>html head body</code></div>
+            </div>
+            <div class="card">
+                <h4>CSS</h4>
+                <p></p>
+                <div class="code-block"><code></code></div>
+            </div>
+            <div class="card">
+                <h4>C#</h4>
+                <p></p>
+                <div class="code-block"><code></code></div>
+            </div>
+        </section>
+        <br>
+        <section class="section" id="certification">
+            <div class="card">
+                <h4>RGPD</h4>
+                <p></p>
+                <img src="">
+            </div>
+            <div class="card">
+                <h4>Packet Tracer</h4>
+                <p></p>
+                <img src="">
+            </div>
+            <div class="card">
+                <h4>Ebios</h4>
+                <p></p>
+                <img src="">
+            </div>
+        </section>
+        <footer>
+            <p>© 2025 • Built with my skills <b>Walid</b></p>
+        </footer>
+    </div>
+    <script>
+        const text = 'cd ~/portfolio';
+        let i = 0;
+        const typed = document.getElementById('typed');
+        function type() {
+            if (i < text.length) {
+                typed.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, 100);
+            }
+        }
+        type();
+    </script>
+</body>
+</html>
